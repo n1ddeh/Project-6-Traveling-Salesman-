@@ -7,23 +7,15 @@
 #IncludeRegexTransform: 
 
 /Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/AdjacencyList.h
-vector
--
-tuple
--
-string
--
-City.h
-/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/City.h
-
-/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/City.h
 iostream
 -
-string
+stdexcept
+-
+vector
 -
 tuple
 -
-vector
+string
 -
 
 /Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/Driver.cpp

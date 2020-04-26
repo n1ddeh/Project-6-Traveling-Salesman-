@@ -3,12 +3,10 @@
 
 CMakeFiles/TravelingSalesman.dir/AdjacencyList.cpp.o: ../AdjacencyList.cpp
 CMakeFiles/TravelingSalesman.dir/AdjacencyList.cpp.o: ../AdjacencyList.h
-CMakeFiles/TravelingSalesman.dir/AdjacencyList.cpp.o: ../City.h
 
 CMakeFiles/TravelingSalesman.dir/Driver.cpp.o: ../Driver.cpp
 
 CMakeFiles/TravelingSalesman.dir/main.cpp.o: ../AdjacencyList.h
-CMakeFiles/TravelingSalesman.dir/main.cpp.o: ../City.h
 CMakeFiles/TravelingSalesman.dir/main.cpp.o: ../Driver.cpp
 CMakeFiles/TravelingSalesman.dir/main.cpp.o: ../main.cpp
 

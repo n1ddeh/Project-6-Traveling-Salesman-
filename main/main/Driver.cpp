@@ -18,10 +18,10 @@ inline std::vector<std::tuple<std::string, int>> RenoConnections(std::vector<std
 
 inline std::vector<std::tuple<std::string, int>> LasVegasConnections(std::vector<std::tuple<std::string, int>>& connections) // Returns connections from Las Vegas.
 {
-	std::tuple<std::string, int> salt_lake = std::make_tuple ("Salt Lake City", 421);
-	std::tuple<std::string, int> reno = std::make_tuple ("Reno", 439);
-	std::tuple<std::string, int> san_francisco = std::make_tuple ("San Francisco", 569);
-	std::tuple<std::string,  int> seattle = std::make_tuple ("Seattle", 1115);
+	auto salt_lake = std::make_tuple ("Salt Lake City", 421);
+	auto reno = std::make_tuple ("Reno", 439);
+	auto san_francisco = std::make_tuple ("San Francisco", 569);
+	auto seattle = std::make_tuple ("Seattle", 1115);
 	connections.push_back(salt_lake);
 	connections.push_back(reno);
 	connections.push_back(san_francisco);

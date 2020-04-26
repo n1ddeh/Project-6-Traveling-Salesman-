@@ -42,7 +42,7 @@ void AdjacencyList::PrintList() {
 	std::cout << city_name_ << " -> ";
 	while (it != city_connections_.end())
 	{
-		std::cout << std::get<std::string>(*it);
+		std::cout << std::get<0>(*it);
 		++it;
 		if (it != city_connections_.end())
 		{

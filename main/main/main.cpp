@@ -1,6 +1,5 @@
 #include "AdjacencyList.h"
 #include "Driver.cpp"
-using namespace std;
 
 int main(void)
 {
@@ -28,6 +27,5 @@ int main(void)
 	SanFran_List.PrintList();
 	Seattle_List.PrintList();
 	
-	system("pause");
 	return 0;
 }
