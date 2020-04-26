@@ -10,10 +10,9 @@ int main(void)
 {
 	std::vector<std::tuple<std::string, int>> RenoC;
 	RenoConnections(RenoC);
-	AdjacencyList RenoList("Reno" , RenoConnections);
+	string reno = "Reno";
+	AdjacencyList RenoList(reno , RenoConnections);
 	
 	system("pause");
 	return 0;
 }
-
-
