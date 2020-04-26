@@ -1,1 +1,36 @@
-This is a test
+List of cities:
+Reno, NV
+Las Vegas, NV
+San Francisco, CA
+Salt Lake City, UT
+Seattle, WA
+
+Reno Distances:
+San Francisco 218 
+Las Vegas 439
+Salt Lake City 518
+Seattle 704
+
+Las Vegas Distances: 
+Salt Lake City 421
+Reno 439
+San Francisco 569
+Seattle 1115
+
+San Francisco Distances:
+Reno 218
+Las Vegas 569
+Seattle 808
+(Salt Lake City connects through Reno)
+
+Salt Lake City Distances:
+Las Vegas 421
+Reno 518
+Seattle 830
+(SF connects through Reno)
+
+Seattle Distances:
+Reno 704
+San Francisco 808
+Salt Lake City 830
+Las Vegas 1115
