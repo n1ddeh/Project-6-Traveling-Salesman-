@@ -3,4 +3,4 @@ project(TravelingSalesman)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(main.cpp Graph.h Driver.cpp City.h AdjacencyList.cpp AdjacencyList.h)
+add_executable(TravelingSalesman main.cpp Graph.h Driver.cpp City.h AdjacencyList.cpp AdjacencyList.h)

@@ -53,12 +53,12 @@ CMAKE_BINARY_DIR = "/Users/ben/OneDrive - University of Nevada, Reno/School/Spri
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.cpp.dir/all
+all: CMakeFiles/TravelingSalesman.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.cpp.dir/clean
+clean: CMakeFiles/TravelingSalesman.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.cpp.dir
+# Target rules for target CMakeFiles/TravelingSalesman.dir
 
 # All Build rule for target.
-CMakeFiles/main.cpp.dir/all:
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/depend
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/CMakeFiles" --progress-num=1,2,3 "Built target main.cpp"
-.PHONY : CMakeFiles/main.cpp.dir/all
+CMakeFiles/TravelingSalesman.dir/all:
+	$(MAKE) -f CMakeFiles/TravelingSalesman.dir/build.make CMakeFiles/TravelingSalesman.dir/depend
+	$(MAKE) -f CMakeFiles/TravelingSalesman.dir/build.make CMakeFiles/TravelingSalesman.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target TravelingSalesman"
+.PHONY : CMakeFiles/TravelingSalesman.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/CMakeFiles" 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.cpp.dir/all
+CMakeFiles/TravelingSalesman.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/CMakeFiles" 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TravelingSalesman.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/main.cpp.dir/rule
+.PHONY : CMakeFiles/TravelingSalesman.dir/rule
 
 # Convenience name for target.
-main.cpp: CMakeFiles/main.cpp.dir/rule
+TravelingSalesman: CMakeFiles/TravelingSalesman.dir/rule
 
-.PHONY : main.cpp
+.PHONY : TravelingSalesman
 
 # clean rule for target.
-CMakeFiles/main.cpp.dir/clean:
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/clean
-.PHONY : CMakeFiles/main.cpp.dir/clean
+CMakeFiles/TravelingSalesman.dir/clean:
+	$(MAKE) -f CMakeFiles/TravelingSalesman.dir/build.make CMakeFiles/TravelingSalesman.dir/clean
+.PHONY : CMakeFiles/TravelingSalesman.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
