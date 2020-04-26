@@ -11,6 +11,5 @@ private:
 	std::vector<AdjacencyList> adjacency_lists_;
 	std::vector<AdjacencyList> seen_adjacency_lists_;
 
-	
 };
 #endif GRAPH_H_

@@ -29,9 +29,6 @@
     <ClInclude Include="AdjacencyList.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="City.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
     <ClInclude Include="Graph.h">
       <Filter>Resource Files</Filter>
     </ClInclude>

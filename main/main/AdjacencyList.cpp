@@ -10,6 +10,7 @@ AdjacencyList::AdjacencyList(const std::string& city, std::vector<std::tuple<std
 	city_connections_ = connections;
 	seen_ = false;
 }
+	
 
 AdjacencyList::~AdjacencyList() = default;
 
@@ -31,7 +32,7 @@ void AdjacencyList::PrintList() {
 		std::cout << "Unknown city has no connections." << std::endl;
 		return;
 	}
-	if(city_name_ != "Unknown" && !city_connections_.empty())
+	if(city_name_ != "Unknown" && city_connections_.empty())
 	{
 		std::cout << city_name_ << std::endl;
 		return;
@@ -41,12 +42,12 @@ void AdjacencyList::PrintList() {
 	std::cout << city_name_ << " -> ";
 	while (it != city_connections_.end())
 	{
-		//std::cout << std::get<std::string>(*it);
+		std::cout << std::get<std::string>(*it);
 		++it;
 		if (it != city_connections_.end())
 		{
 			std::cout << " -> ";
 		}
 	}
-	
+	std::cout << std::endl;
 }

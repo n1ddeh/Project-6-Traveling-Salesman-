@@ -1,9 +1,10 @@
 #ifndef ADJACENCY_LIST_
 #define ADJACENCY_LIST_
+#include <iostream>
+#include <stdexcept>
 #include <vector>
 #include <tuple>
 #include <string>
-#include "City.h"
 
 class AdjacencyList
 {

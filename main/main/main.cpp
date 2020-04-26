@@ -4,12 +4,30 @@ using namespace std;
 
 int main(void)
 {
-	std::vector<std::tuple<std::string, int>> RenoC;
-	RenoConnections(RenoC);
-	AdjacencyList RenoList("Reno" , reinterpret_cast<vector<std::tuple<std::string, int>> &>(RenoConnections));
+	std::vector<std::tuple<std::string, int>> Reno;
+	std::vector<std::tuple<std::string, int>> Las_Vegas;
+	std::vector<std::tuple<std::string, int>> Salt_Lake;
+	std::vector<std::tuple<std::string, int>> San_Fran;
+	std::vector<std::tuple<std::string, int>> Seattle;
+	
+	RenoConnections(Reno);
+	LasVegasConnections(Las_Vegas);
+	SaltLakeCityConnections(Salt_Lake);
+	SanFranciscoConnections(San_Fran);
+	SeattleConnections(Seattle);
+	
+	AdjacencyList Reno_List("Reno" , Reno);
+	AdjacencyList LasVegas_List("Las Vegas" , Las_Vegas);
+	AdjacencyList SaltLake_List("Salt Lake City", Salt_Lake);
+	AdjacencyList SanFran_List("San Francisco", San_Fran);
+	AdjacencyList Seattle_List("Seattle", Seattle);
+	
+	Reno_List.PrintList();
+	LasVegas_List.PrintList();
+	SaltLake_List.PrintList();
+	SanFran_List.PrintList();
+	Seattle_List.PrintList();
 	
 	system("pause");
 	return 0;
 }
-
-
