@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/AdjacencyList.h
+vector
+-
+tuple
+-
+string
+-
+City.h
+/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/City.h
+
+/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/City.h
+iostream
+-
+string
+-
+tuple
+-
+vector
+-
+
+/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/Driver.cpp
+string
+-
+vector
+-
+tuple
+-
+iostream
+-
+
+/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/main.cpp
+AdjacencyList.h
+/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/AdjacencyList.h
+Driver.cpp
+/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/Driver.cpp
+

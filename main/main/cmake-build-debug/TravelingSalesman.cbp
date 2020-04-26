@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main.cpp">
-				<Option output="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/main.cpp" prefix_auto="0" extension_auto="0"/>
+			<Target title="TravelingSalesman">
+				<Option output="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/TravelingSalesman" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.cpp"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 TravelingSalesman"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main.cpp/fast">
-				<Option output="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/main.cpp" prefix_auto="0" extension_auto="0"/>
+			<Target title="TravelingSalesman/fast">
+				<Option output="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/TravelingSalesman" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,7 +73,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.cpp/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 TravelingSalesman/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/ben/OneDrive\ -\ University\ of\ Nevada,\ Reno/School/Spring\ 2020/CS\ 302/TravelingSalesman/main/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,19 +81,22 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/AdjacencyList.cpp">
-			<Option target="main.cpp"/>
+			<Option target="TravelingSalesman"/>
 		</Unit>
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/AdjacencyList.h">
-			<Option target="main.cpp"/>
+			<Option target="TravelingSalesman"/>
 		</Unit>
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/City.h">
-			<Option target="main.cpp"/>
+			<Option target="TravelingSalesman"/>
 		</Unit>
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/Driver.cpp">
-			<Option target="main.cpp"/>
+			<Option target="TravelingSalesman"/>
 		</Unit>
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/Graph.h">
-			<Option target="main.cpp"/>
+			<Option target="TravelingSalesman"/>
+		</Unit>
+		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/main.cpp">
+			<Option target="TravelingSalesman"/>
 		</Unit>
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

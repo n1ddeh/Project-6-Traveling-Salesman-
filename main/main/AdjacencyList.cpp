@@ -5,7 +5,7 @@ AdjacencyList::AdjacencyList() {
 	seen_ = false;
 }
 
-AdjacencyList::AdjacencyList(std::string& city, std::vector<std::tuple<std::string, int>>& connections) {
+AdjacencyList::AdjacencyList(const std::string& city, std::vector<std::tuple<std::string, int>>& connections) {
 	city_name_ = city;
 	city_connections_ = connections;
 	seen_ = false;
@@ -37,11 +37,11 @@ void AdjacencyList::PrintList() {
 		return;
 	}
 
-	std::vector<std::tuple<std::string, int>>::iterator it = city_connections_.begin();
+	auto it = city_connections_.begin();
 	std::cout << city_name_ << " -> ";
 	while (it != city_connections_.end())
 	{
-		std::cout << std::get<std::string>(*it);
+		//std::cout << std::get<std::string>(*it);
 		++it;
 		if (it != city_connections_.end())
 		{

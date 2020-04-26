@@ -1,8 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <tuple>
-#include "AdjacencyList.cpp"
+#include "AdjacencyList.h"
 #include "Driver.cpp"
 using namespace std;
 
@@ -10,9 +6,10 @@ int main(void)
 {
 	std::vector<std::tuple<std::string, int>> RenoC;
 	RenoConnections(RenoC);
-	string reno = "Reno";
-	AdjacencyList RenoList(reno , RenoConnections);
+	AdjacencyList RenoList("Reno" , reinterpret_cast<vector<std::tuple<std::string, int>> &>(RenoConnections));
 	
 	system("pause");
 	return 0;
 }
+
+

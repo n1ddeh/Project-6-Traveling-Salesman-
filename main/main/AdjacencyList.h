@@ -15,7 +15,7 @@ private:
 public:
 	// --- Constructors --- ///
 	AdjacencyList(); // Default CTOR: Creates empty list with no nodes or data.
-	AdjacencyList(std::string& city, std::vector<std::tuple<std::string, int>>& connections);
+	AdjacencyList(const std::string& city, std::vector<std::tuple<std::string, int>>& connections);
 	~AdjacencyList(); // Destructor
 
 	// --- Helper Functions --- ///
