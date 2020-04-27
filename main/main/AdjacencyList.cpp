@@ -51,3 +51,7 @@ void AdjacencyList::PrintList() {
 	}
 	std::cout << std::endl;
 }
+
+std::tuple<std::string, int> AdjacencyList::operator[](int i) {
+	return city_connections_[i];
+}

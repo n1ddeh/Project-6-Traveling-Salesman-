@@ -1,10 +1,6 @@
 #ifndef ADJACENCY_LIST_
 #define ADJACENCY_LIST_
-#include <iostream>
-#include <stdexcept>
-#include <vector>
-#include <tuple>
-#include <string>
+#include "Graph.h"
 
 class AdjacencyList
 {
@@ -17,12 +13,13 @@ public:
 	// --- Constructors --- ///
 	AdjacencyList(); // Default CTOR: Creates empty list with no nodes or data.
 	AdjacencyList(const std::string& city, std::vector<std::tuple<std::string, int>>& connections);
-	~AdjacencyList(); // Destructor
+	~AdjacencyList(); // DTOR
 
 	// --- Helper Functions --- ///
 	std::string GetCity() const;
 	bool IsSeen() const;
 	int ConnectionCount() const;
 	void PrintList();
+	std::tuple<std::string, int> operator[](int i);
 };
 #endif // ADJACENCY_LIST_

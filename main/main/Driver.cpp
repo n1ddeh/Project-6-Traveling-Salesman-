@@ -1,7 +1,6 @@
 #include <string>
 #include <vector>
 #include <tuple>
-#include <iostream>
 
 inline std::vector<std::tuple<std::string, int>> RenoConnections(std::vector<std::tuple<std::string, int>>& connections) // Returns connections from Reno.
 {
@@ -61,31 +60,5 @@ inline std::vector<std::tuple<std::string, int>> SeattleConnections(std::vector<
 	connections.push_back(san_francisco);
 	connections.push_back(salt_lake);
 	connections.push_back(seattle);
-	return connections;
-}
-
-inline std::vector<std::tuple<std::string, int>> GetCityConnection(const std::string&& city) {
-	std::vector<std::tuple<std::string, int>> connections;
-	if (city == "Reno")
-	{
-		return RenoConnections(connections);
-	}
-	else if (city == "Las Vegas")
-	{
-		return LasVegasConnections(connections);
-	}
-	else if (city == "San Francisco")
-	{
-		return SanFranciscoConnections(connections);
-	}
-	else if (city == "Salt Lake City")
-	{
-		return SaltLakeCityConnections(connections);
-	}
-	else if (city == "Seattle")
-	{
-		return SeattleConnections(connections);
-	}
-	std::cout << "GetCityConnection() Error: City not found." << std::endl;
 	return connections;
 }

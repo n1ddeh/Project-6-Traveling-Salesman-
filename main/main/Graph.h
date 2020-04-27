@@ -9,7 +9,13 @@
 class Graph {
 private:
 	std::vector<AdjacencyList> adjacency_lists_;
-	std::vector<AdjacencyList> seen_adjacency_lists_;
+public:
+	Graph();
+	Graph(std::vector<AdjacencyList>& adjacency_list);
+	~Graph();
 
+	void InsertAdjacencyList(AdjacencyList& adjacency_list);
+	void TravelingSalesmanReno();
+	void GetAllPaths();
 };
-#endif GRAPH_H_
+#endif // GRAPH_H_
