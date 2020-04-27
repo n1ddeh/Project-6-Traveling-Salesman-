@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main
+# Install script for directory: /Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/TravelingSalesman/main/main/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

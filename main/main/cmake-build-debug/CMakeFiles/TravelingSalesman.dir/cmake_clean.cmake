@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TravelingSalesman.dir/AdjacencyList.cpp.o"
   "CMakeFiles/TravelingSalesman.dir/Driver.cpp.o"
+  "CMakeFiles/TravelingSalesman.dir/Graph.cpp.o"
   "CMakeFiles/TravelingSalesman.dir/main.cpp.o"
   "TravelingSalesman"
   "TravelingSalesman.pdb"
