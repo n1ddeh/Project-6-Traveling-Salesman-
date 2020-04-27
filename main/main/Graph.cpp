@@ -41,7 +41,9 @@ void Graph::TravelingSalesmanReno() {
 
 void Graph::UniquePaths()
 {
-	std::vector<std::tuple<std::string, int>> path; // stores the path we travel.
+	const std::string starting_city = adjacency_lists_[0].GetCity(); // Starting City.
+	const std::string end_city = starting_city; // End City - For sake of traveling salesman.
+	std::vector<std::tuple<std::string, int>> edges; // stores the path we travel.
 
 	
 
