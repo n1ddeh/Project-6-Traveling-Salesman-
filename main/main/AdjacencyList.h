@@ -1,6 +1,9 @@
 #ifndef ADJACENCY_LIST_
 #define ADJACENCY_LIST_
-#include "Graph.h"
+#include <vector>
+#include <string>
+#include <tuple>
+#include <iostream>
 
 class AdjacencyList
 {
