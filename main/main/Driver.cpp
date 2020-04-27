@@ -55,10 +55,10 @@ inline std::vector<std::tuple<std::string, int>> SeattleConnections(std::vector<
 	const std::tuple<std::string, int> reno = std::make_tuple ("Reno", 704);
 	const std::tuple<std::string, int> san_francisco = std::make_tuple ("San Francisco", 808);
 	const std::tuple<std::string, int> salt_lake = std::make_tuple ("Salt Lake City", 830);
-	const std::tuple<std::string, int> seattle = std::make_tuple ("Seattle", 1115);
+	const std::tuple<std::string, int> las_vegas = std::make_tuple ("Las Vegas", 1115);
 	connections.push_back(reno);
 	connections.push_back(san_francisco);
 	connections.push_back(salt_lake);
-	connections.push_back(seattle);
+	connections.push_back(las_vegas);
 	return connections;
 }

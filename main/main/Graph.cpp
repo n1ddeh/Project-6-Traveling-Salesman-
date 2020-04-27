@@ -3,7 +3,7 @@
 Graph::Graph() = default;
 
 Graph::Graph(std::vector<AdjacencyList>& adjacency_list) {
-	adjacency_lists_ = adjacency_lists_;
+	adjacency_lists_ = adjacency_list;
 }
 
 Graph::~Graph() = default;
@@ -37,4 +37,12 @@ void Graph::TravelingSalesmanReno() {
 	InsertAdjacencyList(SaltLake_List);
 	InsertAdjacencyList(SanFran_List);
 	InsertAdjacencyList(Seattle_List);
+}
+
+void Graph::UniquePaths()
+{
+	std::vector<std::tuple<std::string, int>> path; // stores the path we travel.
+
+	
+
 }

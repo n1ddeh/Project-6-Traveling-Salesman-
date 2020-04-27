@@ -14,6 +14,6 @@ public:
 
 	void InsertAdjacencyList(AdjacencyList& adjacency_list);
 	void TravelingSalesmanReno();
-	void GetAllPaths();
+	void UniquePaths();
 };
 #endif // GRAPH_H_
