@@ -11,7 +11,6 @@ AdjacencyList::AdjacencyList(const std::string& city, std::vector<std::tuple<std
 	seen_ = false;
 }
 	
-
 AdjacencyList::~AdjacencyList() = default;
 
 bool AdjacencyList::IsSeen() const {
@@ -52,6 +51,26 @@ void AdjacencyList::PrintList() {
 	std::cout << std::endl;
 }
 
-std::tuple<std::string, int> AdjacencyList::operator[](int i) {
-	return city_connections_[i];
+std::tuple<std::string, int> AdjacencyList::operator[](int index) {
+	return city_connections_[index];
+}
+
+std::string AdjacencyList::GetCityConnectionName(int index) {
+	auto it = city_connections_[index];
+	return std::get<0>(it);
+}
+
+int AdjacencyList::GetCityConnectionDistance(int index) {
+	auto it = city_connections_[index];
+	return std::get<1>(it);
+}
+
+std::vector<std::tuple<std::string, int>>& AdjacencyList::GetCityConnections()
+{
+	return city_connections_;
+}
+
+void AdjacencyList::SetSeen(bool x)
+{
+	seen_= x;
 }

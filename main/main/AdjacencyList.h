@@ -10,6 +10,7 @@ class AdjacencyList
 private:
 	std::string city_name_;
 	std::vector<std::tuple<std::string, int>> city_connections_;
+	std::vector<bool> edges;
 	bool seen_;
 	
 public:
@@ -21,8 +22,13 @@ public:
 	// --- Helper Functions --- ///
 	std::string GetCity() const;
 	bool IsSeen() const;
+	void SetSeen(bool x);
 	int ConnectionCount() const;
 	void PrintList();
-	std::tuple<std::string, int> operator[](int i);
+	std::vector<std::tuple<std::string, int>>& GetCityConnections();
+	std::tuple<std::string, int> operator[](int index);
+	std::string GetCityConnectionName(int index);
+	int GetCityConnectionDistance(int index);
+	
 };
 #endif // ADJACENCY_LIST_
