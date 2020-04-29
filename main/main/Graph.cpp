@@ -46,3 +46,22 @@ int Graph::route_distance(std::vector<AdjacencyList> sample_route) {
     }
     return distance;
 }
+
+void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start) {
+    if(start == end){
+        if(route_distance(sample_route) < route){
+            adjacency_lists_ = sample_route;
+            route = route_distance(sample_route);
+        }
+        return;
+    }
+    for(int i = start; i < end; i++){
+        std::swap(sample_route[i], sample_route[start]);
+        find_shortest_path(sample_route, end, start+1);
+        std::swap(sample_route[i], sample_route[start]);
+    }
+}
+
+void Graph::ExplorePaths() {
+    find_shortest_path(adjacency_lists_, adjacency_lists_.size()-1, 1);
+}

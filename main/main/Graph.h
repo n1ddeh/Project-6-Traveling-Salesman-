@@ -2,18 +2,21 @@
 #define GRAPH_H_
 #include "AdjacencyList.h"
 #include "Driver.cpp"
+#include <memory>
 
 
 class Graph {
 protected:
     int route_distance(std::vector<AdjacencyList> sample_route);
+    void find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start = 1);
 private:
 	std::vector<AdjacencyList> adjacency_lists_;
+	int route;
 public:
 	Graph();
 	Graph(std::vector<AdjacencyList>& adjacency_list);
 	~Graph();
-
+    void ExplorePaths();
 	void InsertAdjacencyList(AdjacencyList& adjacency_list);
 	void TravelingSalesmanReno();
 };
