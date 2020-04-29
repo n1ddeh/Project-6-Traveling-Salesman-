@@ -52,10 +52,15 @@ int Graph::route_distance(std::vector<AdjacencyList> sample_route) {
 
 void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start) {
     if(start == end){
-        if(route_distance(sample_route) < route_){
+        int temp = route_distance(sample_route);
+        if(temp < route_){
             adjacency_lists_ = sample_route;
-            route_ = route_distance(sample_route);
+            route_ = temp;
         }
+        for(int i = 0; i < sample_route.size(); i++){
+            std::cout << sample_route[i].GetCity() << "\t";
+        }
+        std::cout << std::endl;
         return;
     }
     for(int i = start; i < end; i++){
