@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/AdjacencyList.cpp
-AdjacencyList.h
-/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/AdjacencyList.h
-
 /Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/AdjacencyList.h
 vector
 -
@@ -39,8 +35,4 @@ Driver.cpp
 /Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/Driver.cpp
 memory
 -
-
-/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/main.cpp
-Graph.h
-/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/Graph.h
 

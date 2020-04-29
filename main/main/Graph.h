@@ -11,7 +11,7 @@ protected:
     void find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start = 1);
 private:
 	std::vector<AdjacencyList> adjacency_lists_;
-	int route;
+	int route_ = 0;
 public:
 	Graph();
 	Graph(std::vector<AdjacencyList>& adjacency_list);
@@ -19,5 +19,7 @@ public:
     void ExplorePaths();
 	void InsertAdjacencyList(AdjacencyList& adjacency_list);
 	void TravelingSalesmanReno();
+	int GetRoute();
+	void PrintCityRoute();
 };
 #endif // GRAPH_H_

@@ -83,3 +83,8 @@ int AdjacencyList::GetDistance(const std::string &city) {
     }
     return -1;
 }
+
+std::ostream &AdjacencyList::operator<<(std::ostream &os) {
+    os << city_name_;
+    return os;
+}

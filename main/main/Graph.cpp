@@ -37,6 +37,8 @@ void Graph::TravelingSalesmanReno()
 	InsertAdjacencyList(SaltLake_List);
 	InsertAdjacencyList(SanFran_List);
 	InsertAdjacencyList(Seattle_List);
+	InsertAdjacencyList(Reno_List);
+	std::cout << "Completed Traveling Salesman\n";
 }
 
 int Graph::route_distance(std::vector<AdjacencyList> sample_route) {
@@ -44,14 +46,15 @@ int Graph::route_distance(std::vector<AdjacencyList> sample_route) {
     for(int i = 0; i < sample_route.size()-1; i++){
         distance += sample_route[i].GetDistance(sample_route[i+1].GetCity());
     }
+    std::cout << "Calculated distance of: " << distance << std::endl;
     return distance;
 }
 
 void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start) {
     if(start == end){
-        if(route_distance(sample_route) < route){
+        if(route_distance(sample_route) < route_){
             adjacency_lists_ = sample_route;
-            route = route_distance(sample_route);
+            route_ = route_distance(sample_route);
         }
         return;
     }
@@ -63,5 +66,17 @@ void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end,
 }
 
 void Graph::ExplorePaths() {
+    route_ = route_distance(adjacency_lists_);
     find_shortest_path(adjacency_lists_, adjacency_lists_.size()-1, 1);
+}
+
+int Graph::GetRoute() {
+    return route_;
+}
+
+void Graph::PrintCityRoute() {
+    for(int i = 0; i < adjacency_lists_.size(); i++){
+        std::cout << adjacency_lists_[i].GetCity() << "\t";
+    }
+    std::cout << std::endl;
 }
