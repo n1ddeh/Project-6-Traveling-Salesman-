@@ -16,8 +16,5 @@ public:
 
 	void InsertAdjacencyList(AdjacencyList& adjacency_list);
 	void TravelingSalesmanReno();
-	bool CheckVisited(const std::string& city_name);
-	void UniquePaths();
-	void DepthFirstSearch(int list_index);
 };
 #endif // GRAPH_H_
