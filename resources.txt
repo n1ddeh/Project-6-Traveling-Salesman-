@@ -24,13 +24,13 @@ San Francisco Distances:
 Reno 218
 Las Vegas 569
 Seattle 808
-(Salt Lake City connects through Reno)
+(Salt Lake City connects through Reno) 736
 
 Salt Lake City Distances:
 Las Vegas 421
 Reno 518
 Seattle 830
-(SF connects through Reno)
+(SF connects through Reno) 736
 
 Seattle Distances:
 Reno 704
