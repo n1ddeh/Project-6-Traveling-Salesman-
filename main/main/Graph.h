@@ -5,6 +5,8 @@
 
 
 class Graph {
+protected:
+    int route_distance(std::vector<AdjacencyList> sample_route);
 private:
 	std::vector<AdjacencyList> adjacency_lists_;
 public:

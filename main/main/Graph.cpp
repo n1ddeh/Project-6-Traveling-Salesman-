@@ -84,3 +84,11 @@ bool Graph::CheckVisited(const std::string& city_name)
 	}
 	return false;
 }
+
+int Graph::route_distance(std::vector<AdjacencyList> sample_route) {
+    int distance = 0;
+    for(int i = 0; i < sample_route.size()-1; i++){
+        distance += sample_route[i].GetDistance(sample_route[i+1].GetCity());
+    }
+    return distance;
+}

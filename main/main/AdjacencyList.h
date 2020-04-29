@@ -7,8 +7,6 @@
 
 class AdjacencyList
 {
-protected:
-    int GetDistance(const std::string& city);
 private:
 	std::string city_name_;
 	std::vector<std::tuple<std::string, int>> city_connections_;
@@ -31,6 +29,7 @@ public:
 	std::tuple<std::string, int> operator[](int index);
 	std::string GetCityConnectionName(int index);
 	int GetCityConnectionDistance(int index);
+    int GetDistance(const std::string& city);
 	
 };
 #endif // ADJACENCY_LIST_
