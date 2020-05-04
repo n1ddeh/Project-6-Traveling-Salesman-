@@ -29,6 +29,8 @@ public:
 	std::tuple<std::string, int> operator[](int index);
 	std::string GetCityConnectionName(int index);
 	int GetCityConnectionDistance(int index);
-	
+    int GetDistance(const std::string& city);
+
+    std::ostream& operator<<(std::ostream& os);
 };
 #endif // ADJACENCY_LIST_

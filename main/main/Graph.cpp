@@ -13,7 +13,9 @@ void Graph::InsertAdjacencyList(AdjacencyList& adjacency_list) {
 }
 
 void Graph::TravelingSalesmanReno()
-{	
+{
+    std::cout << "--Traveling Salesman Reno--" << std::endl;
+	
 	std::vector<std::tuple<std::string, int>> Reno;
 	std::vector<std::tuple<std::string, int>> Las_Vegas;
 	std::vector<std::tuple<std::string, int>> Salt_Lake;
@@ -37,50 +39,57 @@ void Graph::TravelingSalesmanReno()
 	InsertAdjacencyList(SaltLake_List);
 	InsertAdjacencyList(SanFran_List);
 	InsertAdjacencyList(Seattle_List);
+	InsertAdjacencyList(Reno_List);
 }
 
-void Graph::UniquePaths()
-{
-	const std::string starting_city = adjacency_lists_[0].GetCity(); // Starting City.
-	const std::string end_city = starting_city; // End City - For sake of traveling salesman.
-	std::vector<std::tuple<std::string, int>> edges; // stores the path we travel.
+int Graph::route_distance(std::vector<AdjacencyList> sample_route) {
+    int distance = 0;
+    for(int i = 0; i < sample_route.size()-1; i++){
+        distance += sample_route[i].GetDistance(sample_route[i+1].GetCity());
+    }
+    //std::cout << "Calculated distance of: " << distance << std::endl;
+    return distance;
 }
 
-void Graph::DepthFirstSearch(int list_index)
-{
-	std::string visiting_city = "Unknown";
-	int new_visiting = 0;
-	std::cout << "visiting " << adjacency_lists_[list_index].GetCity() << std::endl;
-	for (auto it = adjacency_lists_[list_index].GetCityConnections().begin(); it != adjacency_lists_[list_index].GetCityConnections().end(); ++it)
-	{
-		visiting_city = std::get<0>(*it);
-		if (!CheckVisited(visiting_city))
-		{
-			for (auto it1 = adjacency_lists_.begin(); it1 != adjacency_lists_.end(); ++it1)
-			{
-				if (it1->GetCity() == visiting_city)
-				{
-					it1->SetSeen(true);
-					break;
-				}
-				new_visiting++;
-			}
-			std::cout << adjacency_lists_[list_index].GetCity() << " -> " << visiting_city << std::endl;
-			DepthFirstSearch(new_visiting);
-		}
-	}
+void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start) {
+    if(start == end)
+    {
+        int temp = route_distance(sample_route);
+        if(temp < route_) {
+            adjacency_lists_ = sample_route;
+            route_ = temp;
+        }
+        for(int i = 0; i < sample_route.size(); i++){
+            std::cout << sample_route[i].GetCity();
+        	if ( i < sample_route.size() - 1) {
+        		std::cout << " -> ";
+        	}
+        }
+        std::cout << " [" << temp << "]" << std::endl;
+        return;
+    }
+    for(int i = start; i < end; i++){
+        std::swap(sample_route[i], sample_route[start]);
+        find_shortest_path(sample_route, end, start+1);
+        std::swap(sample_route[i], sample_route[start]);
+    }
 }
 
-bool Graph::CheckVisited(const std::string& city_name)
-{
-	auto it = adjacency_lists_.begin();
-	while (it != adjacency_lists_.end())
-	{
-		if ((it->GetCity() == city_name) && (it->IsSeen()))
-		{
-			return true;
-		}
-		++it;
-	}
-	return false;
+void Graph::ExplorePaths() {
+	route_ = route_distance(adjacency_lists_);
+    find_shortest_path(adjacency_lists_, adjacency_lists_.size() - 1, 1);
+}
+
+int Graph::GetRoute() {
+    return route_;
+}
+
+void Graph::PrintCityRoute() {
+    for(int i = 0; i < adjacency_lists_.size(); i++) {
+        std::cout << adjacency_lists_[i].GetCity();
+    	if (i < adjacency_lists_.size() - 1) {
+    		std::cout << " -> ";
+    	}
+    }
+    std::cout << std::endl;
 }

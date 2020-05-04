@@ -74,3 +74,17 @@ void AdjacencyList::SetSeen(bool x)
 {
 	seen_= x;
 }
+
+int AdjacencyList::GetDistance(const std::string &city) {
+    for(auto & city_connection : city_connections_){
+        if(std::get<0>(city_connection) == city){
+            return std::get<1>(city_connection);
+        }
+    }
+    return -1;
+}
+
+std::ostream &AdjacencyList::operator<<(std::ostream &os) {
+    os << city_name_;
+    return os;
+}

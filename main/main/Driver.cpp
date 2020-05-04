@@ -33,9 +33,11 @@ inline std::vector<std::tuple<std::string, int>> SanFranciscoConnections(std::ve
 	auto reno = std::make_tuple ("Reno", 218);
 	auto las_vegas = std::make_tuple ("Las Vegas", 569);
 	auto seattle = std::make_tuple ("Seattle", 808);
+	auto salt_lake = std::make_tuple ("Salt Lake City", 736);
 	connections.emplace_back(reno);
 	connections.emplace_back(las_vegas);
 	connections.emplace_back(seattle);
+	connections.emplace_back(salt_lake);
 	return connections;
 }
 
@@ -44,9 +46,11 @@ inline std::vector<std::tuple<std::string, int>> SaltLakeCityConnections(std::ve
 	auto las_vegas = std::make_tuple ("Las Vegas", 421);
 	auto reno = std::make_tuple ("Reno", 518);
 	auto seattle = std::make_tuple ("Seattle", 830);
+	auto san_francisco = std::make_tuple ("San Francisco", 736);
 	connections.emplace_back(las_vegas);
 	connections.emplace_back(reno);
 	connections.emplace_back(seattle);
+	connections.emplace_back(san_francisco);
 	return connections;
 }
 

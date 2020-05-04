@@ -4,10 +4,9 @@ int main(void)
 {
 	Graph RenoTravels;
 	RenoTravels.TravelingSalesmanReno();
-	RenoTravels.DepthFirstSearch(0);
-
-
-	
+    RenoTravels.ExplorePaths();
+	std::cout << std::endl << "Shortest Distance: " << RenoTravels.GetRoute() << std::endl;
+    RenoTravels.PrintCityRoute();
 	return 0;
 }
 
