@@ -51,7 +51,7 @@ int Graph::route_distance(std::vector<AdjacencyList> sample_route) {
     return distance;
 }
 
-void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start) {
+void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end, int start, std::ostream &os) {
     if(start == end)
     {
         int temp = route_distance(sample_route);
@@ -60,36 +60,38 @@ void Graph::find_shortest_path(std::vector<AdjacencyList> sample_route, int end,
             route_ = temp;
         }
         for(int i = 0; i < sample_route.size(); i++){
-            std::cout << sample_route[i].GetCity();
+            os << sample_route[i].GetCity();
         	if ( i < sample_route.size() - 1) {
-        		std::cout << " -> ";
+        		os << " -> ";
         	}
         }
-        std::cout << " [" << temp << "]" << std::endl;
+        os << " [" << temp << "]" << std::endl;
         return;
     }
     for(int i = start; i < end; i++){
         std::swap(sample_route[i], sample_route[start]);
-        find_shortest_path(sample_route, end, start+1);
+        find_shortest_path(sample_route, end, start+1, os);
         std::swap(sample_route[i], sample_route[start]);
     }
 }
 
-void Graph::ExplorePaths() {
+void Graph::ExplorePaths(std::ostream &os) {
 	route_ = route_distance(adjacency_lists_);
-    find_shortest_path(adjacency_lists_, adjacency_lists_.size() - 1, 1);
+    find_shortest_path(adjacency_lists_, adjacency_lists_.size() - 1, 1, os);
+    os << std::endl << "Shortest Distance: " << route_ << std::endl;
+    this->PrintCityRoute(os);
 }
 
 int Graph::GetRoute() {
     return route_;
 }
 
-void Graph::PrintCityRoute() {
+void Graph::PrintCityRoute(std::ostream &os) {
     for(int i = 0; i < adjacency_lists_.size(); i++) {
-        std::cout << adjacency_lists_[i].GetCity();
+        os << adjacency_lists_[i].GetCity();
     	if (i < adjacency_lists_.size() - 1) {
-    		std::cout << " -> ";
+    		os << " -> ";
     	}
     }
-    std::cout << std::endl;
+    os << std::endl;
 }

@@ -86,9 +86,6 @@
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/AdjacencyList.h">
 			<Option target="TravelingSalesman"/>
 		</Unit>
-		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/City.h">
-			<Option target="TravelingSalesman"/>
-		</Unit>
 		<Unit filename="/Users/ben/OneDrive - University of Nevada, Reno/School/Spring 2020/CS 302/Project-6-Traveling-Salesman-/main/main/Driver.cpp">
 			<Option target="TravelingSalesman"/>
 		</Unit>
